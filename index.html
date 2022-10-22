@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <link rel="stylesheet" href=".assets/style.css">
+       <title>Weather Forecast</title>
 </head>
 <body>
-    
+    <body class="flex-column min-100-vh">
+        <header class="hero">
+          <h1 class="app-title"><i class="fab fa-github"></i> Weather Dashboard</h1>
+        </header>
+      
+      
+        <main class="flex-row justify-space-between">
+          <div class="col-12 col-md-4">
+      
+            <div class="city">
+              <h3 class="city-search text-uppercase">Search By City</h3>
+              <form id="user-form" class="card-body">
+                <label class="form-label" for="username">Username</label>
+                <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+                <button type="submit" class="btn">Search</button>
+              </form>
+            </div>
+      
+            <div class="city">
+              <h3 class="top-city text-uppercase"></h3>
+              <div id="language-buttons" class="card-body">
+                <button data-language="javascript" class="btn">Atlanta</button>
+                <button data-language="html" class="btn">Denver</button>
+                <button data-language="css" class="btn">Seattle</button>
+                <button data-language="css" class="btn">San Francisco</button>
+                <button data-language="css" class="btn">Orland</button>
+                <button data-language="css" class="btn">New York</button>
+                <button data-language="css" class="btn">Chicago</button>
+                <button data-language="css" class="btn">Austin</button>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-12 col-md-8">
+            <h2 class="today-weather">Showing Weather for: <span id="weather-search-city"></span></h2>
+            <div class="weather-item">
+                <p>Temperature</p>
+                <p>87*F</p>
+            </div>
+            <div class="weather-item">
+                <p>Wind</p>
+                <p>6.54 MPH</p>
+            </div>
+            <div class="weather-item">
+                <p>Humidity</p>
+                <p>87%</p>
+            </div>
+
+          </div>
+        </main>
+
+<script src="script.js"></script>
+
 </body>
 </html>
