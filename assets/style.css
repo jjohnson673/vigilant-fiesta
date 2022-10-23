@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 body {
-    background-color: #d48429;
+    background-image: url('autumn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Oswald', sans-serif;
 }
 
 .section-title {
     font-size: 60px;
+    margin-top: 2em;
+
 }
 
 .search {
@@ -34,7 +38,7 @@ ul {
 }
 
 .weather-container {
-    margin: 150px auto;
+    margin: 2em auto;
     background-color: #fff;
     padding: 50px 50px;
     border-radius: 10px;
