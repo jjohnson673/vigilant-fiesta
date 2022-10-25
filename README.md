@@ -24,7 +24,8 @@ When the user searches their destination city, the page will then load with the 
 
 
 ## Deployed URL
- <a href="" target="_blank">Click here to go to the deployed site</a>
+ <a href="https://jjohnson673.github.io/vigilant-fiesta/"
+  target="_blank">Click here to go to the deployed site</a>
 
 ## Credits
 
