@@ -50,7 +50,7 @@ var getCityWeather = function(cityName) {
     // if response was successful 
     fetch(apiURL)
     console.log(apiURL)
-    
+
     .then(function(response) {
         if (response.ok) {
             response.json().then(function(data) {
@@ -68,44 +68,9 @@ var getCityWeather = function(cityName) {
 }
 
 
-//UV index API 
-var searchCityUV = function(lon, lat, cityName) {
-    var uvUrl = 'https://api.openweathermap.org/data/2.5/uvi?q=${cityName}&appid=${api_key}&lat=${lat}&lon=${lon}'; 
-
-    fetch(uvUrl).then(function(response) {
-        if (response.ok) {
-            response.json().then(function(lon, lat, cityName) {
-                displayCurrentUv(lon, lat, city);
-            });
-        } else {
-            alert("Error:" + response.statusText);
-        }
-        })
-        
-        // if network error 
-        .catch(function(error) {
-            alert("Unable to connect to Open Weather");
-    })
-};
-
-
-//current weather data display
-
-
-//clear old content
-
-//temperature
-
-//humidity
-
-//wind speed
-
-//list items
-
-
 
 // 5 day forecast API 
-var getForecast = function(city) {
+var getForecast = function(cityName) {
     var forecastURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&cnt=6&appid=" + key;
 
     // if response was successful 
@@ -191,4 +156,13 @@ displayIcon5.setAttribute ("src", currentIcon5);
 };
 
 //search button
+userFormEl.addEventListener("submit", formSubmitHandler);
+
+
+
+
+//current weather data display
+//temperature
+//humidity
+//wind speed
 
